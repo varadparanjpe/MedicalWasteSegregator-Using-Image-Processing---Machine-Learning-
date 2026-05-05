@@ -1,0 +1,70 @@
+BIOMEDICAL WASTE PREPROCESSING LOG
+============================================================
+
+SOURCE 1: archive/dataset  (original Indonesian classes)
+  suntik               → sharps_waste
+  skalpels             → sharps_waste
+  ampul                → pharmaceutical_waste
+  IV-tube              → infectious_waste
+  kapas                → infectious_waste
+  perban               → infectious_waste
+  gloves               → plastic_recyclable
+  masker               → general_waste
+
+SOURCE 2: archive/  (new archive folders)
+  syringe                             → sharps_waste
+  syringe_needle                      → sharps_waste
+  tweezers                            → sharps_waste
+  gauze                               → infectious_waste
+  urine_bag                           → infectious_waste
+  test_tube                           → infectious_waste
+  body_tissue_or_organ                → pathological_waste
+  organic_waste                       → pathological_waste
+  glove_pair_latex                    → plastic_recyclable
+  glove_pair_nitrile                  → plastic_recyclable
+  glove_pair_surgery                  → plastic_recyclable
+  glove_single_latex                  → plastic_recyclable
+  glove_single_nitrile                → plastic_recyclable
+  glove_single_surgery                → plastic_recyclable
+  shoe_cover_pair                     → plastic_recyclable
+  shoe_cover_single                   → plastic_recyclable
+  plastic_equipment_packaging         → plastic_recyclable
+  glass_equipment_packaging           → pharmaceutical_waste
+  metal_equipment_packaging           → pharmaceutical_waste
+  paper_equipment_packaging           → pharmaceutical_waste
+  mask                                → general_waste
+  medical_cap                         → general_waste
+  medical_glasses                     → general_waste
+
+Image size     : (224, 224)
+Aug factor     : x6 (train only)
+Split          : train=0.7 / val=0.15 / test=0.15
+Pixel mean     : 0.5413
+Pixel std      : 0.1544
+
+FINAL COUNTS
+------------------------------------------------------------
+
+TRAIN:
+  sharps_waste                   8162
+  infectious_waste               7672
+  pathological_waste             5306
+  plastic_recyclable             14847
+  pharmaceutical_waste           6755
+  general_waste                  5201
+
+VAL:
+  sharps_waste                   251
+  infectious_waste               236
+  pathological_waste             163
+  plastic_recyclable             455
+  pharmaceutical_waste           207
+  general_waste                  160
+
+TEST:
+  sharps_waste                   251
+  infectious_waste               236
+  pathological_waste             163
+  plastic_recyclable             455
+  pharmaceutical_waste           207
+  general_waste                  160

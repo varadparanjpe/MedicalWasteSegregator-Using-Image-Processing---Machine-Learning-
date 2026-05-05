@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+dist/
+build/
+*.db
+backend/weights/*.pt
+backend/weights/*.pth
+.DS_Store
+runs/
+.env

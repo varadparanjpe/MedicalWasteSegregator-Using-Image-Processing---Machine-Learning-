@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.9993,
+  "precision_macro": 0.9992,
+  "recall_macro": 0.9993,
+  "f1_macro": 0.9993,
+  "inference_ms_per_image": 0.443,
+  "params_M": 4.02,
+  "test_samples": 7231,
+  "epochs": 30,
+  "batch_size": 32,
+  "lr": 0.0003,
+  "class_weights": true
+}
